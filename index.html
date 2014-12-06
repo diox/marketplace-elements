@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>Marketplace Elements</title>
-        <link rel="stylesheet" href="/marketplace-elements/dist/css/marketplace-elements.css">
-        <link rel="stylesheet" href="/marketplace-elements/dist/css/marketplace-elements-self.css">
-        <script src="/marketplace-elements/dist/js/document-register-element.js"></script>
-        <script src="/marketplace-elements/dist/js/marketplace-elements.js"></script>
+        <link rel="stylesheet" href="/dist/css/marketplace-elements.css">
+        <link rel="stylesheet" href="/dist/css/marketplace-elements-self.css">
+        <script src="/dist/js/document-register-element.js"></script>
+        <script src="/dist/js/marketplace-elements.js"></script>
     </head>
     <body>
         <div class="page">
@@ -22,6 +22,11 @@
                     <mkt-banner success dismiss="off">Marketplace Elements
                         <a href="https://github.com/mozilla/marketplace-elements">Code on GitHub</a>
                     </mkt-banner>
+<pre>
+&lt;mkt-banner success dismiss="off"&gt;Marketplace Elements
+    &lt;a href="https://github.com/mozilla/marketplace-elements"&gt;Code on GitHub&lt;/a&gt;
+&lt;/mkt-banner&gt;
+</pre>
                 </section>
                 <section name="mkt-segmented">
                     <mkt-segmented>
@@ -31,6 +36,15 @@
                             <option value="all" selected>All languages</option>
                         </select>
                     </mkt-segmented>
+<pre>
+&lt;mkt-segmented&gt;
+    &lt;select&gt;
+        &lt;option value="en"&gt;English&lt;/option&gt;
+        &lt;option value="wat"&gt;Whatever&lt;/option&gt;
+        &lt;option value="all" selected&gt;All languages&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/mkt-segmented&gt;
+</pre>
                 </section>
                 <section name="mkt-tab-control">
                     <mkt-tab-control>
@@ -40,8 +54,20 @@
                             <option value="all" selected>All languages</option>
                         </select>
                     </mkt-tab-control>
+<pre>
+&lt;mkt-tab-control&gt;
+    &lt;select&gt;
+        &lt;option value="en"&gt;English&lt;/option&gt;
+        &lt;option value="wat"&gt;Whatever&lt;/option&gt;
+        &lt;option value="all" selected&gt;All languages&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/mkt-tab-control&gt;
+</pre>
                 </section>
             </mkt-tabs>
+
+            <pre id="current-element-source"></pre>
         </div>
+        <script src="/dist/js/marketplace-elements-self.js"></script>
     </body>
 </html>
